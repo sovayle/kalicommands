@@ -1,0 +1,169 @@
+kali commands:
+echo pwd ls cd mv cp rm / rmdir clear cat grep chmod apt-get wget strings 
+
+kali tools
+binwalk stegsolve JohnTheRipper
+Binwalk is a tool for searching a given binary image for embedded files and executable code.
+Specifically, it is designed for identifying files and code embedded 
+
+https://www.youtube.com/watch?v=EQT2gVJuGsE&feature=youtu.be
+
+
+start-transcript
+get-command -noun S*
+sort-object
+get-host | select-object version
+get-alias
+cls
+cd windows\
+cd system32\
+get-process
+get-process -name chrome | select-object/get-member *
+
+
+
+
+kali linux
+sudo su  - super user do
+pwd-present working directory
+cd - change directory
+ls - listing files    and "ls -l" -a
+mkdir,rmdir make remove directory             rm -vrf trip-pictures    to delete a non-empty directory
+rename = mv old-name new-name
+
+-i is ignore grep -i hope hey.txt
+touch mango.txt = create a txt file
+cp ,rm ,mv , locate
+updatedb
+passwd
+man
+
+pwd
+cd ..
+pwd
+ls     
+cd root/
+ls
+cd /etc/
+ls /etc/
+ls desktop/
+mkdir azim
+ls
+rmdir azim/    or rm for normal file
+ls -la (for hidden files)
+cd .cache/
+ls
+cd ..
+ls
+echo "Hi!" > test.txt
+ls
+cp test.txt Downloads/
+ls Downloads/
+rm Downloads/test/txt
+ls Downloads/
+mv test.txt Downloads/
+ls
+ls Downloads/
+rm Downloads/test/txt
+locate bash
+updatedb
+passwd
+man ls
+clear/ ctrl+L
+
+for read write execute, drwxr-xr-x
+cat hello.txt
+chmod 777 hello.txt
+cat /etc/passwd
+sudo adduser john
+cat /etc/shadow\
+su john su root
+tool like hashcat to crack pw
+
+common network commands
+ifconfig - show like ipv4 ipv6 mac address
+iwconfig - wireless adapter version
+ping - icmp communicate with other machine to see if its alive or not
+arp - maps ip address to mac address
+netstat -display all connection and ports
+route
+
+/sbin/ifconfig
+ping ip address
+
+netstat -ano  to check whats open and whats talking. its good to see if a machine is talking 
+to somebody else
+
+echo - echoes back what we type right back to the terminal
+cat - print out a document for us (all it does is dispay whats in a file)
+replacing vs appending (> vs >>) - 
+touch - create file on fly
+nano - texteditor thats build in terminal
+gedit - GUI texteditor
+
+echo "hey" > hey.txt
+echo "hey again" >> hey.txt
+
+
+sevices - deals with service can stop and stard services on fly
+systemctl - enable or disable services on boot or do not enable on boot
+
+service apache2 start/stop
+python -m SimpleHTTPServer 8080
+copy inet ip paste on firefox lsr
+
+install updates with kali apt-get
+install tools using apt-get
+using git
+
+wget  for online downloads
+apt-get update && apt-get upgrade
+- looking through packages n predefined and check repositories for updates
+they update and after they update, the && then upgrade bacsed on packages
+following will be upgraded
+
+
+
+add sudo
+
+git
+
+git clone (website link thingy in github)
+
+
+SCRIPTING WITH BASH
+grep - allow narrow down result
+cut -narrow
+tr -narrow
+script writing
+for loops
+
+/sbin/ifconfig
+ping ip
+ctrl c 
+ping ip -c 1
+ping ip -c 1 > ip.txt
+cat ip.txt
+ping ip -c 1
+cat ip.txt | grep "64 bytes" | cut -d " " -f 4 | tr -d ":"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
